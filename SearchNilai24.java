@@ -4,7 +4,15 @@ public class SearchNilai24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] nilai = { 78, 65, 90, 55, 88, 72 };
+        System.out.print("Banyak nilai yang akan diinput: ");
+        int bnykNilai = sc.nextInt();
+        int[] nilai = new int[bnykNilai];
+
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.print("Masukkan nilai ke-" + (i + 1) + ": ");
+            nilai[i] = sc.nextInt();
+        }
+        
         int key = 70;
         boolean ditemukan = false;
 
