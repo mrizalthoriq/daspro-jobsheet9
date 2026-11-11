@@ -13,7 +13,8 @@ public class SearchNilai24 {
             nilai[i] = sc.nextInt();
         }
         
-        int key = 70;
+        System.out.print("Masukkan nilai yang dicari: ");
+        int key = sc.nextInt();
         boolean ditemukan = false;
 
         for (int i = 0; i < nilai.length; i++) {
@@ -24,7 +25,7 @@ public class SearchNilai24 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Nilai yang dicari tidak ditemukan.");
         }
 
         sc.close();
